@@ -16,5 +16,3 @@ Each chapter illustrates some of today's finest data science, data mining, and m
 - Regression Trees and Rule-Based Models (Regression Trees, Rule-based Models, Random Forests, Boosting, Cubist
 - Many Classification Models
 - Many Case Study Examples
-1. Numbered
-2. List
