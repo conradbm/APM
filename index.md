@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## Applied Predictive Modeling
 
-You can use the [editor on GitHub](https://github.com/conradbm/APM/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+The goal of this page is to take a stroll through Max Khun's book Applied Predictive Modeling
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Each chapter illustrates some of today's finest data science, data mining, and machine learning techniques from a statistics standpoint.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Book Contents
 
-- Bulleted
-- List
-
+- Data Preprocessing in R 
+- Over-fitting and Model Tuning
+- Linear Models (Linear Regression, PLS, ect..)
+- Non-linear Models (Neural Networks, MARS, SVM, KNN, ect..)
+- Regression Trees and Rule-Based Models (Regression Trees, Rule-based Models, Random Forests, Boosting, Cubist
+- Many Classification Models
+- Many Case Study Examples
 1. Numbered
 2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/conradbm/APM/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
