@@ -1,15 +1,30 @@
-## Pro-tip: Online R-interpreter shell here at [R-Fiddle](http://www.r-fiddle.org/#/fiddle?id=czRYN6Xg). 
+<h1>Chapter 7: Non Linear Regression Models</h1>
+<hr>
 
+<h2>Neural Networks</h2>
 
-```markdown
-- Neural nets phase 1: Each node in the layer, get its linear combination (plus some constant for model tuning)
-	- This is essentially each node in the input layer transposed times the inputlayer as a column vector, this returns a scalar
-	- This scalar is then put into a non-linear logistic (i.e., sigmoidal) function, which makes it nonlinear
-	- If the value beats a threshold, we light up that node with a 1 for the input layer and store the value, else 0 not used
-	- An example of how one might determine what the best type of neural net is **is to set a sequence of weight decay (regularization, just a tuning parameter) and a sequence of hidden layers, train the model, predict, get an RSME, then plot each of them in the sequence against each other. Find the best one and use it (lowest RMSE).
-	-
-	
-- Multivariate Adaptive Regression Splines (MARS)
-	- MARS, breaks predictors down into two groups and models linear relationships between the predictor and the outcome in each group, this **piecewise linear model** is created where each new feature models an isolated portion of the original data.
-	
-```
+<p>In essence, neural nets are a uni-directional graph. In order to go from one node to the next, we apply a dot product. The set up is by layers, typically annotated the <em>start layer</em>,<em>hidden layer(s)</em>, and <em>outcome layer</em>. Each of the layers has an associated constant associated with it, <strong>these can be tuned as a hyper parameter</strong>. We are basically doing dot products of the current layer, with each of the units in the next layer (Plus each hidden units individual bias (constant)). This value is then passed into the logistic (sigmoidal) to detect non-linearities (If we suspect the data is not linearly related, ex. images, text data, ect..). </p>
+
+<p>The model parameters are found by the <strong>back propogation algorithm</strong>, which uses gradient descent which uses derivatives to find the optimal parameters. </p>
+
+<h2>Multivariate Adaptive Regression Splines</h2>
+
+<p>In essence, breaks the predictors up into two groups and sees how well each of those groups does as a predictors with the outcome of the group.</p>
+<p>You can decide how many of those groups you want as new features by optimizing the solution.</p>
+
+<h2>Support Vector Machines</h2>
+
+<p>Find the best hyperplane (defined by its support vectors) which separates two classes of data points. </p>
+
+<p>The hyperparameters defined by this are:
+<ul> 
+<li>the C value, which allows us to introduce some bias error (points in the the margin) </li>
+<li></li>
+</ul>
+</p>
+
+<h2>K-Nearest Neighbor</h2>
+
+<p>A great solution to missing data in a data set. We can use it for imputation. A new sample is imputed by finding the samples in the training set "closest to it" and averages these nearby points (K of them) to fill in the value</p>
+<p></p>
+<p></p>
