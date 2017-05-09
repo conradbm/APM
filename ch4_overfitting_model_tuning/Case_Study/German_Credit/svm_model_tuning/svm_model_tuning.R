@@ -83,7 +83,7 @@ svmFit <- train(Class ~ .,
                 data = GermanCreditTrain,
                 method = "svmRadial",
                 preProc = c("center", "scale"),
-                tuneGrid = svmTuneGrid,
+                tuneGrid = svmTuneGrid, # This is done automatically, but is nice to learn
                 trControl = trainControl(method = "repeatedcv", 
                                          repeats = 5,
                                          classProbs = TRUE))
@@ -170,6 +170,8 @@ glmProfile <- train(Class ~ .,
                                              repeats = 5))
 glmProfile
 
+## https://www.r-project.org/nosvn/conferences/useR-2013/Tutorials/kuhn/user_caret_2up.pdf
+## Kappa is another error metric
 resamp <- resamples(list(SVM = svmFit, Logistic = glmProfile))
 summary(resamp)
 
